@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\usepackage{libertine}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Ubuntu}
+
+\usepackage[
+    left=1in,
+    right=1in,
+    top=1in,
+    bottom=1in
+]{geometry}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{Old Persian}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\graphicspath{ {./sections/img/} }
+\usepackage{stackengine}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    anchorcolor=blue,
+    citecolor=blue,
+}
+
+\newfontfamily{\oldpersian}{Parsoomash}
+
+\setlength{\parindent}{0pt}

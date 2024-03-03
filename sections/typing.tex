@@ -1,0 +1,9 @@
+\section{Typing Old Persian}\cite{TypePersian}
+
+\begin{multicols}{4}
+    \count255=32
+    \loop\ifnum\count255<125
+    \advance\count255 1
+    \hbox{\hbox to 1em{\symbol{\count255}\hss}\hbox{\oldpersian\symbol{\count255}}}
+    \repeat
+\end{multicols}
