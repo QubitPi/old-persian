@@ -1,4 +1,4 @@
-PROJECT=main
+PROJECT=old-persian
 TEX_ENGINE=xelatex
 BIB_ENGINE=bibtex
 
@@ -15,7 +15,7 @@ all:
 	$(REMOVE_AUXILIARY)
 
 clean-all:
-	rm -rf *.aux *.log *.out *.bbl *.blg main.pdf
+	rm -rf *.aux *.log *.out *.bbl *.blg $(PROJECT).pdf
 
 clean:
 	rm -rf *.aux *.log *.out *.bbl *.blg
