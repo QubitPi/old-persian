@@ -10,7 +10,7 @@ all:
 	$(REMOVE_AUXILIARY)
 
 clean-all:
-	rm -rf *.aux *.log main.pdf
+	rm -rf *.aux *.log *.out main.pdf
 
 clean:
-	rm -rf *.aux *.log
+	rm -rf *.aux *.log *.out
