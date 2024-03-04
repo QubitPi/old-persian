@@ -4,7 +4,7 @@
 
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX]{Ubuntu}
-\newfontfamily{\oldpersian}{Parsoomash}[Scale=MatchUppercase,WordSpace={30},]
+\newfontfamily{\oldpersian}{Parsoomash}[LetterSpace=30]
 
 \usepackage[
     left=1in,
@@ -21,7 +21,6 @@
 \lfoot{}
 \cfoot{}
 \rfoot{\thepage}
-
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
@@ -36,7 +35,9 @@
     linkcolor=blue,
     anchorcolor=blue,
     urlcolor=blue,
-    citecolor=blue,
+    citecolor=red,
 }
 
 \setlength{\parindent}{0pt}
+
+\usepackage[superscript,biblabel]{cite}

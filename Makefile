@@ -24,5 +24,5 @@ clean:
 
 git-push:
 	git add old-persian.pdf
-	git commit -S -m "Update notes"
+	git commit -m "Update notes"
 	git push origin master
