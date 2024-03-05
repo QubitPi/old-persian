@@ -16,7 +16,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{\href{https://github.com/QubitPi/old-persian}{Study Notes - Old Persian}}
-\chead{\href{https://en.wikipedia.org/wiki/Old_Persian_cuneiform}{\scalebox{2}{\oldpersian pals}}}
+\chead{\href{https://en.wikipedia.org/wiki/Old_Persian_cuneiform}{\scalebox{2}{\oldpersian pars}}}
 \rhead{\href{https://github.com/QubitPi}{QubitPi}}
 \lfoot{}
 \cfoot{}
@@ -39,5 +39,23 @@
 }
 
 \setlength{\parindent}{0pt}
+
+
+\usepackage[most]{tcolorbox}
+
+% https://tex.stackexchange.com/a/307436/277953
+
+\newtcolorbox{marker}[1][]{enhanced,
+before skip=2mm,after skip=3mm,
+boxrule=0.4pt,left=5mm,right=2mm,top=1mm,bottom=1mm,
+colback=yellow!50,
+colframe=yellow!20!black,
+sharp corners,rounded corners=southeast,arc is angular,arc=3mm,
+underlay={%
+    \path[fill=tcbcolback!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+    \path[draw=tcbcolframe,shorten <=-0.05mm,shorten >=-0.05mm] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+    \path[fill=yellow!50!black,draw=none] (interior.south west) rectangle node[white]{\Huge\bfseries !} ([xshift=4mm]interior.north west);
+},
+drop fuzzy shadow,#1}
 
 \usepackage[superscript,biblabel]{cite}
